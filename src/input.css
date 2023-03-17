@@ -21,7 +21,7 @@
   }
 
   .button {
-    @apply flex items-center justify-center h-11 w-34.5 bg-gold-dark text-white duration-300 hover:bg-neutral-900 ;
+    @apply flex items-center justify-center h-11 w-34.5 bg-gold-dark text-white duration-300 hover:bg-neutral-900 hover:shadow-lg;
   }
 
   .heading {

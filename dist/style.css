@@ -605,6 +605,9 @@ h1, h2, h3, h4, h5, h6 {
 .button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 44 / var(--tw-bg-opacity));
+  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .heading {
@@ -644,10 +647,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
 }
 
-.sticky {
-  position: sticky;
-}
-
 .inset-x-2\/4 {
   left: 50%;
   right: 50%;
@@ -671,10 +670,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .top-19 {
   top: 4.75rem;
-}
-
-.z-50 {
-  z-index: 50;
 }
 
 .mx-auto {
@@ -869,11 +864,6 @@ h1, h2, h3, h4, h5, h6 {
 .bg-neutral-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(44 44 44 / var(--tw-bg-opacity));
-}
-
-.bg-white {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
 .object-cover {
