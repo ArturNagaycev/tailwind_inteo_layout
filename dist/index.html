@@ -28,29 +28,31 @@
 
       <!-- HEADER actions -->
 
-      <div class="flex items-center space-x-8">
+      <div class="flex items-center gap-8">
 
         <!-- HEADER menu -->
 
-        <ul class="hidden space-x-12 tablet:flex">
-          <li>
-            <a class="desktop:text-neutral-700 underline__hover" href="#about">
-              About
-            </a>
-          </li>
-
-          <li>
-            <a class="desktop:text-neutral-700 underline__hover" href="#services">
-              Services
-            </a>
-          </li>
-
-          <li>
-            <a class="desktop:text-neutral-700 underline__hover" href="#works">
-              Our Work
-            </a>
-          </li>
-        </ul>
+        <nav>
+          <ul class="hidden gap-12 tablet:flex">
+            <li>
+              <a class="font-medium desktop:text-neutral-700 underline__hover" href="#about">
+                About
+              </a>
+            </li>
+  
+            <li>
+              <a class="font-medium desktop:text-neutral-700 underline__hover" href="#services">
+                Services
+              </a>
+            </li>
+  
+            <li>
+              <a class="font-medium desktop:text-neutral-700 underline__hover" href="#works">
+                Our Work
+              </a>
+            </li>
+          </ul>
+        </nav>
 
         <!-- HEADER button -->
 
@@ -69,213 +71,200 @@
     
     <main>
       
-      <!-- HERO TITLE -->
+      <!-- HERO -->
 
-      <section class="container flex flex-col items-center">
+      <section>
 
-        <!-- HERO TITLE main title -->
+        <!-- HERO title -->
 
-        <h1 class="text-center font-medium text-5xl leading-tight mb-6 tablet:text-7xl tablet:leading-snug tablet:tracking-tight">
-          Make
-          <i>
-            your home
-          </i>
-          an ode to joy
-        </h1>
+        <div class="container flex flex-col items-center">
 
-        <!-- HERO TITLE description -->
+          <!-- HERO title main title -->
+  
+          <h1 class="text-center font-medium text-5xl leading-[60px] mb-6 tablet:text-7xl tablet:leading-[96px] tablet:tracking-tight">
+            Make
+            <i>
+              your home
+            </i>
+            an ode to joy
+          </h1>
+  
+          <!-- HERO title description -->
+  
+          <p class="text-center text-lg leading-8 text-neutral-700 mb-20 tablet:text-xl tablet:leading-8 desktop:w-200">
+            We turn your empty house to a lovely home, making the compact spaces  with sapce saving furnitures. Making the unique tastes of yours into reality! 
+          </p>
+        </div>
 
-        <p class="text-center text-lg leading-8 text-neutral-700 mb-20 tablet:text-xl tablet:leading-8 desktop:w-200">
-          We turn your empty house to a lovely home, making the compact spaces  with sapce saving furnitures. Making the unique tastes of yours into reality! 
-        </p>
-      </section>
-
-      <!-- HERO IMAGE -->
+        <!-- HERO image -->
       
-      <section class="relative mx-auto max-w-[1440px]">
+        <div class="relative mx-auto max-w-[1440px]">
 
-        <!-- HERO IMAGE main image -->
+          <!-- HERO image main image -->
 
-        <img
-          class="h-160 object-center object-cover"
-          src="./assets/img/hero-image_desktop.jpg"
-          alt="flat photo"
-        >
+          <picture>
+            <source media="(max-width: 375px)" srcset="./assets/img/hero-image_mobile.jpg" />
+            <img class="h-160 object-center object-cover" src="./assets/img/hero-image_desktop.jpg" alt="flat photo" />
+          </picture>
 
-        <!-- HERO IMAGE cta button -->
+          <!-- HERO image cta button -->
 
-        <button class="scale103__hover w-[120px] absolute top-0 inset-x-2/4 -translate-x-2/4 -translate-y-2/4 desktop:translate-x-0 desktop:left-28">
-          <img
-            src="./assets/img/button_cta_icon.svg"
-            alt="cta button"
-          >
-        </button>
-      </section>
+          <button class="scale103__hover w-[120px] absolute top-0 inset-x-2/4 -translate-x-2/4 -translate-y-2/4 desktop:translate-x-0 desktop:left-28">
+            <img
+              src="./assets/img/button_cta_icon.svg"
+              alt="cta button"
+            >
+          </button>
+        </div>
 
-      <!-- AWARDS -->
+        <!-- HERO awards -->
 
-      <section class="mx-auto max-w-[1440px] bg-neutral-900 mb-12 tablet:mb-24 desktop:mb-48.5">
-        <div class="container flex items-start tablet:items-center py-6">
+        <div class="mx-auto max-w-[1440px] bg-neutral-900">
+          <div class="container flex items-start tablet:items-center py-6">
 
-          <!-- AWARDS title -->
+            <!-- HERO awards title -->
 
-          <div class="relative">
-            <h6 class="
-              absolute top-19 origin-top-left -rotate-90 italic text-2xl text-white opacity-50
-                after:absolute after:left-2/4 after:top-10 after:content-[''] after:h-6 after:w-px after:bg-white
-              tablet:top-0 tablet:-left-9.5 tablet:origin-top 
-                tablet:after:h-16
-            ">
-              Awards
-            </h6>
+            <div class="relative">
+              <h4 class="hero-awards-title">
+                Awards
+              </h4>
+            </div>
+
+            <!-- HERO awards list -->
+      
+            <ul class="hero-awards-list">
+              <li class="flex items-center gap-3">
+                <img src="./assets/img/award_icon_german-design.svg" alt="german design award">
+
+                <span class="font-normal text-neutral-300">
+                  German Design Award
+                  <br>
+                  2021
+                </span>
+              </li>
+      
+              <li class="flex items-center gap-3">
+                <img src="./assets/img/award_icon_a-design.svg" alt="a design award">
+
+                <span class="font-normal text-neutral-300">
+                  Gold A’ Design Award
+                  <br>
+                  2021
+                </span>
+              </li>
+      
+              <li class="flex items-center gap-3">
+                <img src="./assets/img/award_icon_if-design.svg" alt="if design award">
+
+                <span class="font-normal text-neutral-300">
+                  IF Design Award
+                  <br>
+                  2020
+                </span>
+              </li>
+      
+              <li class="flex items-center gap-3">
+                <img src="./assets/img/award_icon_good-design.svg" alt="good design award">
+                <span class="font-normal text-neutral-300">
+                  Good Design Award
+                  <br>
+                  2019
+                </span>
+              </li>
+            </ul>
           </div>
-
-          <!-- AWARDS list -->
-    
-          <ul class="
-            flex flex-col space-y-6 ml-21
-            tablet:grid tablet:grid-cols-2 tablet:gap-x-10 tablet:gap-y-8 tablet:space-y-0 tablet:ml-34
-            desktop:flex desktop:flex-row desktop:gap-16
-          ">
-            <li class="flex items-center space-x-3">
-              <img src="./assets/img/award_icon_german-design.svg" alt="german design award">
-
-              <span class="font-normal text-neutral-300">
-                German Design Award
-                <br>
-                2021
-              </span>
-            </li>
-    
-            <li class="flex items-center space-x-3">
-              <img src="./assets/img/award_icon_a-design.svg" alt="a design award">
-
-              <span class="font-normal text-neutral-300">
-                Gold A’ Design Award
-                <br>
-                2021
-              </span>
-            </li>
-    
-            <li class="flex items-center space-x-3">
-              <img src="./assets/img/award_icon_if-design.svg" alt="if design award">
-
-              <span class="font-normal text-neutral-300">
-                IF Design Award
-                <br>
-                2020
-              </span>
-            </li>
-    
-            <li class="flex items-center space-x-3">
-              <img src="./assets/img/award_icon_good-design.svg" alt="good design award">
-              <span class="font-normal text-neutral-300">
-                Good Design Award
-                <br>
-                2019
-              </span>
-            </li>
-          </ul>
         </div>
       </section>
 
       <!-- ABOUT -->
 
-      <section id="about" class="container flex flex-col mb-12 tablet:mb-24 desktop:mb-32 desktop:flex-row desktop:space-x-10">
-
-        <!-- ABOUT text block -->
-
-        <div class="mb-20 tablet:mb-28 desktop:mb-0 desktop:max-w-[592px]">
-
-          <!-- ABOUT pretitle -->
-
-          <div>
-            <h4 class="pretitle">
-              ABOUT US
-            </h4>
-          </div>
-
-          <!-- ABOUT title -->
-    
-          <h3 class="heading mb-6">
-            We help to bring your
-            <i>
-              dream home
-            </i>
-            to reality
-          </h3>
-
-          <!-- ABOUT paragraph 1 -->
-    
-          <p class="text-base text-neutral-700 mb-6 tablet:text-lg tablet:leading-loose">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.
-          </p>
-
-          <!-- ABOUT paragraph 1 -->
-    
-          <p class="text-base text-neutral-700 tablet:text-lg tablet:leading-loose">
-            Tempor dolor elementum tellus non ipsum faucibus. Justo, magna mauris posuere auctor justo. Habitant proin aliquet volutpat leo ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc. Faucibus sit odio bibendum lobortis diam.
-          </p>
-        </div>
-
-        <!-- ABOUT images -->
-
-        <div class="relative">
-          <div class="flex justify-center space-x-[9px] tablet:space-x-4 desktop:pr-2">
-            
-            <!-- ABOUT image 1 -->
-
-            <div class="desktop:-mt-16.5">
-              <img
-                class="scale103__hover"
-                src="./assets/img/about_image_1.jpg"
-                alt="flat photo kitchen"
-              >
-            </div>
-
-            <!-- ABOUT image 2 -->
-    
-            <div class="pt-11 tablet:pt-[93px] desktop:pt-1">
-              <img
-                class="scale103__hover"
-                src="./assets/img/about_image_2.jpg"
-                alt="flat photo bedroom"
-              >
-            </div>
-          </div>
-
-          <!-- ABOUT badge -->
-
-          <img
-            class="absolute -top-14 left-[141px] tablet:left-[291px] desktop:-top-30.5 desktop:left-60"
-            src="./assets/img/about_badge_icon.svg"
-            alt="badge design studio"
-          >
-        </div>
-      </section>
-
-      <!-- METRICS -->
-
       <section class="container">
 
-        <!-- METRICS list -->
+        <!-- ABOUT main block -->
 
-        <ul class="
-          flex flex-col space-y-8 pb-12 border-b border-neutral-300 mb-24
-          tablet:flex-row tablet:space-y-0 tablet:space-x-8 tablet:mb-36
-          desktop:pb-20 desktop:mb-40
-        ">
+        <div id="about" class="about">
 
-          <!-- METRICS mitric 1-->
+          <!-- ABOUT text block -->
 
-          <li class="
-            scale103__hover flex items-center space-x-4
-            tablet:flex-col tablet:items-start tablet:space-x-0 tablet:space-y-2 tablet:basis-2/6
-            desktop:flex-row desktop:items-center desktop:space-x-4 desktop:space-y-0
-          ">
-            <h6 class="text-5xl leading-tight tablet:text-6xl tablet:tracking-tight">
+          <div class="flex flex-col gap-6 desktop:max-w-[592px]">
+
+            <!-- ABOUT pretitle -->
+
+            <div>
+              <h4 class="pretitle mb-0">
+                ABOUT US
+              </h4>
+            </div>
+
+            <!-- ABOUT title -->
+      
+            <h2 class="heading">
+              We help to bring your
+              <i>
+                dream home
+              </i>
+              to reality
+            </h2>
+
+            <!-- ABOUT paragraph 1 -->
+      
+            <p class="text-base text-neutral-700 tablet:text-lg tablet:leading-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.
+            </p>
+
+            <!-- ABOUT paragraph 2 -->
+      
+            <p class="text-base text-neutral-700 tablet:text-lg tablet:leading-8">
+              Tempor dolor elementum tellus non ipsum faucibus. Justo, magna mauris posuere auctor justo. Habitant proin aliquet volutpat leo ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc. Faucibus sit odio bibendum lobortis diam.
+            </p>
+          </div>
+
+          <!-- ABOUT images -->
+
+          <div class="relative">
+            <div class="flex justify-center gap-[9px] tablet:gap-4 desktop:pr-2">
+              
+              <!-- ABOUT image 1 -->
+
+              <div class="desktop:-mt-16.5">
+                <img
+                  class="scale103__hover"
+                  src="./assets/img/about_image_1.jpg"
+                  alt="flat photo kitchen"
+                >
+              </div>
+
+              <!-- ABOUT image 2 -->
+      
+              <div class="pt-11 tablet:pt-[93px] desktop:pt-1">
+                <img
+                  class="scale103__hover"
+                  src="./assets/img/about_image_2.jpg"
+                  alt="flat photo bedroom"
+                >
+              </div>
+            </div>
+
+            <!-- ABOUT badge -->
+
+            <img
+              class="absolute -top-14 left-[141px] tablet:left-[291px] desktop:-top-30.5 desktop:left-60"
+              src="./assets/img/about_badge_icon.svg"
+              alt="badge design studio"
+            >
+          </div>
+        </div>
+
+        <!-- ABOUT metrics -->
+
+        <ul class="flex flex-col gap-8 pb-12 border-b border-neutral-300 tablet:flex-row desktop:pb-20">
+
+          <!-- ABOUT metrics mitric 1-->
+
+          <li class="metric scale103__hover">
+            <span class="font-playfair text-5xl leading-[60px] tablet:text-6xl tablet:leading-[72px] tablet:tracking-tight">
               100%
-            </h6>
+            </span>
 
             <span class="font-normal text-sm tracking-wider">
               SATISFITATION
@@ -284,16 +273,12 @@
             </span>
           </li>
 
-          <!-- METRICS mitric 2-->
+          <!-- ABOUT metrics mitric 2-->
 
-          <li class="
-            scale103__hover flex items-center space-x-4
-            tablet:flex-col tablet:items-start tablet:space-x-0 tablet:space-y-2 tablet:basis-2/6
-            desktop:flex-row desktop:items-center desktop:space-x-4 desktop:space-y-0
-          ">
-            <h6 class="text-5xl leading-tight tablet:text-6xl tablet:tracking-tight">
+          <li class="metric scale103__hover">
+          <span class="font-playfair text-5xl leading-[60px] tablet:text-6xl tablet:leading-[72px] tablet:tracking-tight">
               250
-            </h6>
+            </span>
 
             <span class="font-normal text-sm tracking-wider">
               SATISFITATION
@@ -302,16 +287,12 @@
             </span>
           </li>
 
-          <!-- METRICS mitric 2-->
+          <!-- ABOUT metrics mitric 2-->
           
-          <li class="
-            scale103__hover flex items-center space-x-4
-            tablet:flex-col tablet:items-start tablet:space-x-0 tablet:space-y-2 tablet:basis-2/6
-            desktop:flex-row desktop:items-center desktop:space-x-4 desktop:space-y-0
-          ">
-            <h6 class="text-5xl leading-tight tablet:text-6xl tablet:tracking-tight">
+          <li class="metric scale103__hover">
+          <span class="font-playfair text-5xl leading-[60px] tablet:text-6xl tablet:leading-[72px] tablet:tracking-tight">
               3469
-            </h6>
+            </span>
 
             <span class="font-normal text-sm tracking-wider">
               SATISFITATION
@@ -324,7 +305,7 @@
 
       <!-- SERVICES -->
 
-      <section id="services" class="container mb-24 tablet:mb-48 desktop:mb-56">
+      <section id="services" class="container pt-24 tablet:pt-36 desktop:pt-40">
 
         <!-- SERVICES pretitle-->
 
@@ -334,17 +315,17 @@
 
         <!-- SERVICES main title -->
 
-        <h3 class="heading mb-10 tablet:mb-20 desktop:w-[800px]">
+        <h2 class="heading mb-10 tablet:mb-20 desktop:w-[800px]">
           We provide the
           <i>
             best solutions
           </i>
           for your dream home
-        </h3>
+        </h2>
 
         <!-- SERVICES list -->
 
-        <ul class="flex flex-col space-y-8 desktop:flex-row desktop:space-y-0 desktop:space-x-8">
+        <ul class="flex flex-col gap-8 desktop:flex-row">
 
           <!-- SERVICES service 1 -->
 
@@ -355,9 +336,9 @@
               alt="Architectural & Interior design icon"
             >
             
-            <h5 class="mb-4 text-3xl leading-10 tablet:text-4xl">
+            <h3 class="mb-4 text-3xl leading-10 tablet:text-4xl">
               Architectural & Interior design
-            </h5>
+            </h3>
 
             <p class="text-lg leading-8 text-neutral-700">
               Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.
@@ -373,9 +354,9 @@
               alt="Building Renovation icon"
             >
             
-            <h5 class="mb-4 text-3xl leading-10 tablet:text-4xl">
+            <h3 class="mb-4 text-3xl leading-10 tablet:text-4xl">
               Building Renovation
-            </h5>
+            </h3>
             
             <p class="text-lg leading-8 text-neutral-700">
               Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.
@@ -390,9 +371,9 @@
               src="./assets/img/service_icon_3.svg"
               alt="Construciton Management icon">
             
-            <h5 class="mb-4 text-3xl leading-10 tablet:text-4xl">
+            <h3 class="mb-4 text-3xl leading-10 tablet:text-4xl">
               Construciton Management
-            </h5>
+            </h3>
             
             <p class="text-lg leading-8 text-neutral-700">
               Non diam pretium tristique augue placerat dolor. Accumsan nibh nunc, molestie volutpat ipsum, ultricies.
@@ -405,8 +386,8 @@
 
       <section id="works" class="container">
         <div class="relative">
-          <div class="pb-40 border-b border-b-neutral-300 mb-10 tablet:pb-52 tablet:mb-20 desktop:pb-30 desktop:flex desktop:space-x-[88px]">
-            <div class="mb-10 tablet:mb-20 desktop:mb-0 desktop:max-w-[592px]">
+          <div class="works">
+            <div class="desktop:max-w-[592px]">
               <!-- WORKS pretitle-->
       
               <h4 class="pretitle">
@@ -415,26 +396,26 @@
       
               <!-- WORKS main title -->
       
-              <h3 class="heading mb-12 desktop:mb-24">
+              <h2 class="heading mb-12 desktop:mb-24">
                 Some of
                 <i>
                   our crafts
                 </i>
                 made with love
-              </h3>
+              </h2>
       
               <!-- WORKS work 1 -->
 
-              <div>
+              <div class="flex flex-col gap-4">
                 <img
-                  class="scale103__hover mb-6"
+                  class="scale103__hover mb-2"
                   src="./assets/img/works_image_1.jpg"
                   alt="Villa Furnishing & Interior image"
                 >
       
-                <h5 class="mb-4 text-2xl tablet:text-4xl tablet:leading-snug">
+                <h3 class="text-2xl tablet:text-4xl tablet:leading-[48px]">
                   Villa Furnishing & Interior
-                </h5>
+                </h3>
       
                 <p class="text-neutral-700 tablet:text-lg tablet:leading-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam. Erat id laoreet posuere etiam morbi.
@@ -442,20 +423,20 @@
               </div>
             </div>
       
-            <div class="desktop:max-w-[480px]">
+            <div class="flex flex-col gap-10 tablet:gap-20 desktop:max-w-[480px]">
 
               <!-- WORKS work 2 -->
 
-              <div class="mb-10 tablet:mb-20">
+              <div class="flex flex-col gap-4">
                 <img
-                  class="scale103__hover mb-6"
+                  class="scale103__hover"
                   src="./assets/img/works_image_2.jpg"
                   alt="Luxury Hotel Renovation image"
                 >
       
-                <h5 class="mb-4 text-2xl tablet:text-4xl tablet:leading-snug">
+                <h3 class="text-2xl tablet:text-4xl tablet:leading-[48px]">
                   Luxury Hotel Renovation
-                </h5>
+                </h3>
       
                 <p class="text-neutral-700 tablet:text-lg tablet:leading-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam.
@@ -464,16 +445,16 @@
 
               <!-- WORKS work 3 -->
       
-              <div>
+              <div class="flex flex-col gap-4">
                 <img 
-                  class="scale103__hover mb-6"
+                  class="scale103__hover"
                   src="./assets/img/works_image_3.jpg"
                   alt="Residence Swimming Pool image"
                 >
       
-                <h5 class="mb-4 text-2xl tablet:text-4xl tablet:leading-snug">
+                <h3 class="text-2xl tablet:text-4xl tablet:leading-[48px]">
                   Residence Swimming Pool
-                </h5>
+                </h3>
       
                 <p class="text-neutral-700 tablet:text-lg tablet:leading-8">
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus fringilla dui amet faucibus nam.
@@ -498,38 +479,36 @@
       <!-- CONTACTS -->
 
       <section class="container">
-        <div class="mb-10 pb-10 border-b border-b-neutral-300 tablet:mb-20 tablet:pb-20 desktop:flex desktop:justify-between">
+        <div class="contacts">
 
           <!-- CONTACTS main text -->
 
-          <div class="mb-12 tablet:max-w-[592px] desktop:mb-0">
-            <h5 class="mb-2 text-3xl leading-10 tablet:mb-4 tablet:text-5xl tablet:leading-tight">
+          <div class="flex flex-col gap-2 tablet:gap-4 tablet:max-w-[592px]">
+            <h2 class="text-3xl leading-10 tablet:text-5xl tablet:leading-[60px]">
               Kick-start your dream home with us
-            </h5>
+            </h2>
     
-            <a class="block font-playfair font-normal italic underline text-3xl leading-10 text-gold-dark tablet:text-5xl tablet:leading-tight" href="#some-modal-window">
+            <a class="contacts-main-link" href="#some-modal-window">
               Send us a hi
             </a>
           </div>
 
-          <!-- CONTACTS address -->
-    
-          <div class="desktop:max-w-[280px]">
-            <div class="mb-8">
-              <h6 class="mb-2 text-2xl">
-                Brooklyn, New York
-              </h6>
-    
-              <a href="https://goo.gl/maps/H65wANrVQsQ4HTbE8" target="_blank">
-                962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United State.
-              </a>
-            </div>
+          <!-- CONTACTS address, email, phone -->
 
-            <!-- CONTACTS email, phone -->
-    
-            <ul>
-              <li class="mb-8">
-                <span class="block mb-2">
+          <div class="desktop:max-w-[280px]">
+            <ul class="flex flex-col gap-8">
+              <li class="flex flex-col gap-2">
+                <span class="block font-playfair text-2xl">
+                  Brooklyn, New York
+                </span>
+      
+                <a href="https://goo.gl/maps/H65wANrVQsQ4HTbE8" target="_blank">
+                  962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United State.
+                </a>
+              </li>
+
+              <li class="flex flex-col gap-2">
+                <span class="block">
                   Email us at
                 </span>
     
@@ -538,8 +517,8 @@
                 </a>
               </li>
     
-              <li>
-                <span class="block mb-2">
+              <li class="flex flex-col gap-2">
+                <span class="block">
                   If you're hurry, quick call for us
                 </span>
     
@@ -556,18 +535,18 @@
     <!-- FOOTER -->
 
     <footer class="container">
-      <div class="mb-10 tablet:mb-20 desktop:flex desktop:justify-between desktop:items-center">
+      <div class="flex flex-col gap-8 mb-10 tablet:mb-20 desktop:flex-row desktop:gap-0 desktop:justify-between desktop:items-center">
 
         <!-- FOOTER copyright -->
 
-        <span class="block mb-8 desktop:mb-0 text-base text-neutral-700">
+        <span class="block text-base text-neutral-700">
           © 2022 Inteo - Award winning studio. Made with love by 
           <a class="text-gold-dark" href="#landify-website">
             Landify
           </a>
         </span>
   
-        <div class="flex flex-col space-y-4 tablet:flex-row tablet:items-center tablet:space-y-0 tablet:space-x-26">
+        <div class="flex flex-col gap-4 tablet:flex-row tablet:items-center tablet:gap-26">
 
           <!-- FOOTER pre icons title -->
 
@@ -580,7 +559,7 @@
 
           <!-- FOOTER icons -->
   
-          <ul class="flex space-x-6">
+          <ul class="flex gap-6">
             <li>
               <a href="#instagram">
                 <img class="scale103__hover" src="./assets/img/footer_icon_instagram.svg" alt="Instagram icon">

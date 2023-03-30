@@ -3,8 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  * {
+    @apply box-border;
+  }
   html {
-    scroll-behavior: smooth;
+    @apply scroll-smooth;
   }
   body {
     @apply font-outfit font-light text-neutral-900 text-sm leading-6;
@@ -16,23 +19,122 @@
 
 @layer components {
   .pretitle {
-    @apply relative font-outfit font-semibold text-sm text-gold-dark ml-20 mb-6 tracking-widest
-      before:absolute before:top-2/4 before:-translate-x-full before:-ml-4 before:content-[''] before:w-16 before:h-px before:bg-gold-dark;
+    @apply relative font-outfit font-semibold text-sm text-gold-dark ml-20 mb-6 tracking-widest;
+  }
+
+  .pretitle::before {
+    @apply absolute top-2/4 -translate-x-full -ml-4 content-[''] w-16 h-px bg-gold-dark;
   }
 
   .button {
-    @apply flex items-center justify-center h-11 w-34.5 bg-gold-dark text-white duration-300 hover:bg-neutral-900 hover:shadow-lg;
+    @apply flex items-center justify-center h-11 w-34.5 bg-gold-dark text-white font-semibold duration-300;
+  }
+
+  .button:hover {
+    @apply bg-neutral-900 shadow-lg;
   }
 
   .heading {
-    @apply text-4xl leading-snug tablet:text-6xl tablet:leading-tight tablet:tracking-tight;
+    @apply text-4xl leading-[48px];
+  }
+
+  .hero-awards-title {
+    @apply absolute top-19 origin-top-left -rotate-90 italic text-2xl text-white opacity-50;
+  }
+
+  .hero-awards-title::after {
+    @apply absolute left-2/4 top-10 content-[''] h-6 w-px bg-white
+  }
+
+  .hero-awards-list {
+    @apply grid grid-cols-1 gap-6 ml-21;
+  }
+
+  .about {
+    @apply flex flex-col gap-20 mb-12 pt-12;
   }
 
   .scale103__hover {
-    @apply hover:scale-103 duration-300;
+    @apply duration-300 hover:scale-103 ;
   }
 
-  .underline__hover {
-    @apply hover:underline hover:underline-offset-8;
+  .underline__hover:hover {
+    @apply underline underline-offset-8;
+  }
+
+  .metric {
+    @apply flex items-center gap-4;
+  }
+
+  .works {
+    @apply flex flex-col gap-10 pt-24 pb-40 border-b border-b-neutral-300 mb-10;
+  }
+
+  .contacts {
+    @apply flex flex-col gap-12 mb-10 pb-10 border-b border-b-neutral-300;
+  }
+
+  .contacts-main-link {
+    @apply block font-playfair font-normal italic underline underline-offset-4 decoration-1 text-3xl leading-10 text-gold-dark;
+  }
+
+  @screen tablet {
+    .heading {
+      @apply text-6xl leading-[72px] tracking-tight;
+    }
+
+    .hero-awards-title {
+      @apply top-0 -left-9.5 origin-top;
+    }
+
+    .hero-awards-title::after {
+      @apply h-16;
+    }
+
+    .hero-awards-list {
+      @apply grid-cols-2 gap-x-10 gap-y-8 ml-34;
+    }
+
+    .about {
+      @apply gap-28 pt-24 mb-24;
+    }
+
+    .metric {
+      @apply flex-col items-start gap-2 basis-2/6;
+    }
+
+    .works {
+      @apply pt-48 pb-52 mb-20 gap-20;
+    }
+
+    .contacts {
+      @apply mb-20 pb-20;
+    }
+
+    .contacts-main-link {
+      @apply text-5xl leading-[60px]
+    }
+  }
+
+  @screen desktop {
+    .hero-awards-list {
+      @apply flex gap-16;
+    }
+
+    .about {
+      @apply pt-48.5 mb-32 flex-row gap-10;
+    }
+
+    .metric {
+      @apply flex-row items-center gap-4;
+    }
+
+    .works {
+      @apply flex-row pt-56 pb-30 gap-[88px];
+    }
+
+    .contacts {
+      @apply flex-row gap-0 justify-between;
+    }
   }
 }
