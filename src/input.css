@@ -19,7 +19,7 @@
 
 @layer components {
   .pretitle {
-    @apply relative font-outfit font-semibold text-sm text-gold-dark ml-20 mb-6 tracking-widest;
+    @apply block relative font-semibold text-sm text-gold-dark ml-20 mb-6 tracking-widest;
   }
 
   .pretitle::before {
@@ -39,7 +39,7 @@
   }
 
   .hero-awards-title {
-    @apply absolute top-19 origin-top-left -rotate-90 italic text-2xl text-white opacity-50;
+    @apply absolute font-playfair font-normal top-19 origin-top-left -rotate-90 italic text-2xl text-white opacity-50;
   }
 
   .hero-awards-title::after {
