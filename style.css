@@ -570,7 +570,7 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   margin-left: 5rem;
   margin-bottom: 1.5rem;
-  font-family: Outfit, Arial, sans-serif;
+  display: block;
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 600;
@@ -627,8 +627,11 @@ h1, h2, h3, h4, h5, h6 {
   transform-origin: top left;
   --tw-rotate: -90deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  font-family: Playfair Display, Georgia, serif;
+  font-feature-settings: "lnum", "pnum";
   font-size: 1.5rem;
   line-height: 2rem;
+  font-weight: 400;
   font-style: italic;
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
