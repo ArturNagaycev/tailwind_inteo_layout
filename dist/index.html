@@ -14,40 +14,36 @@
   <body>
     <!-- HEADER -->
 
-    <header class="container flex items-center justify-between h-21 mb-20">
+    <header class="header">
 
       <!-- HEADER logo -->
 
       <a href="#">
-        <img
-          class="h-6 scale103__hover"
-          src="./assets/img/logo.svg"
-          alt="logo"
-        >
+        <img class="header__logo" src="./assets/img/logo.svg" alt="logo">
       </a>
 
       <!-- HEADER actions -->
 
-      <div class="flex items-center gap-8">
+      <div class="header__actions">
 
         <!-- HEADER menu -->
 
-        <nav>
-          <ul class="hidden gap-12 tablet:flex">
+        <nav class="header__menu">
+          <ul class="header__menu-items">
             <li>
-              <a class="font-medium desktop:text-neutral-700 underline__hover" href="#about">
+              <a class="header__menu-link" href="#about">
                 About
               </a>
             </li>
   
             <li>
-              <a class="font-medium desktop:text-neutral-700 underline__hover" href="#services">
+              <a class="header__menu-link" href="#services">
                 Services
               </a>
             </li>
   
             <li>
-              <a class="font-medium desktop:text-neutral-700 underline__hover" href="#works">
+              <a class="header__menu-link" href="#works">
                 Our Work
               </a>
             </li>
@@ -56,13 +52,10 @@
 
         <!-- HEADER button -->
 
-        <button class="button text-xs">
+        <button class="header__button">
           CONTACT US
-          <img
-            class="ml-1"
-            src="./assets/img/button_icon.svg"
-            alt="button arrow icon"
-          >
+
+          <img src="./assets/img/button_icon.svg" alt="button arrow icon">
         </button>
       </div>
     </header>
@@ -77,11 +70,11 @@
 
         <!-- HERO title -->
 
-        <div class="container flex flex-col items-center">
+        <div class="hero__text">
 
           <!-- HERO title main title -->
   
-          <h1 class="text-center font-medium text-5xl leading-[60px] mb-6 tablet:text-7xl tablet:leading-[96px] tablet:tracking-tight">
+          <h1 class="hero__title">
             Make
             <i>
               your home
@@ -91,81 +84,78 @@
   
           <!-- HERO title description -->
   
-          <p class="text-center text-lg leading-8 text-neutral-700 mb-20 tablet:text-xl tablet:leading-8 desktop:w-200">
+          <p class="hero__description">
             We turn your empty house to a lovely home, making the compact spaces  with sapce saving furnitures. Making the unique tastes of yours into reality! 
           </p>
         </div>
 
         <!-- HERO image -->
       
-        <div class="relative mx-auto max-w-[1440px]">
+        <div class="hero__image-container">
 
           <!-- HERO image main image -->
 
           <picture>
             <source media="(max-width: 375px)" srcset="./assets/img/hero-image_mobile.jpg" />
-            <img class="h-160 object-center object-cover" src="./assets/img/hero-image_desktop.jpg" alt="flat photo" />
+            <img class="hero__image" src="./assets/img/hero-image_desktop.jpg" alt="flat photo" />
           </picture>
 
           <!-- HERO image cta button -->
 
-          <button class="scale103__hover w-[120px] absolute top-0 inset-x-2/4 -translate-x-2/4 -translate-y-2/4 desktop:translate-x-0 desktop:left-28">
-            <img
-              src="./assets/img/button_cta_icon.svg"
-              alt="cta button"
-            >
+          <button class="hero__button">
+            <img src="./assets/img/button_cta_icon.svg" alt="cta button">
           </button>
         </div>
 
         <!-- HERO awards -->
 
-        <div class="mx-auto max-w-[1440px] bg-neutral-900">
-          <div class="container flex items-start tablet:items-center py-6">
+        <div class="hero__awards">
+          <div class="hero__awards-content">
 
             <!-- HERO awards title -->
 
-            <div class="relative">
-              <span class="hero-awards-title">
+            <div class="hero__awards-title">
+              <span class="hero__awards-title-text">
                 Awards
               </span>
             </div>
 
             <!-- HERO awards list -->
       
-            <ul class="hero-awards-list">
-              <li class="flex items-center gap-3">
+            <ul class="hero__awards-list">
+              <li class="hero__awards-award">
                 <img src="./assets/img/award_icon_german-design.svg" alt="german design award">
 
-                <span class="font-normal text-neutral-300">
+                <span class="hero__awards-award-text">
                   German Design Award
                   <br>
                   2021
                 </span>
               </li>
       
-              <li class="flex items-center gap-3">
+              <li class="hero__awards-award">
                 <img src="./assets/img/award_icon_a-design.svg" alt="a design award">
 
-                <span class="font-normal text-neutral-300">
+                <span class="hero__awards-award-text">
                   Gold A’ Design Award
                   <br>
                   2021
                 </span>
               </li>
       
-              <li class="flex items-center gap-3">
+              <li class="hero__awards-award">
                 <img src="./assets/img/award_icon_if-design.svg" alt="if design award">
 
-                <span class="font-normal text-neutral-300">
+                <span class="hero__awards-award-text">
                   IF Design Award
                   <br>
                   2020
                 </span>
               </li>
       
-              <li class="flex items-center gap-3">
+              <li class="hero__awards-award">
                 <img src="./assets/img/award_icon_good-design.svg" alt="good design award">
-                <span class="font-normal text-neutral-300">
+                <span class="hero__awards-award-text">
                   Good Design Award
                   <br>
                   2019
