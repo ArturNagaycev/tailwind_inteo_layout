@@ -18,11 +18,69 @@
 }
 
 @layer components {
+  .pretitle {
+    @apply block relative font-semibold text-sm text-gold-dark ml-20 mb-6 tracking-widest;
+
+    &::before {
+      @apply absolute top-2/4 -translate-x-full -ml-4 content-[''] w-16 h-px bg-gold-dark;
+    }
+  }
+
+  .button {
+    @apply flex gap-1 items-center justify-center h-11 w-34.5 bg-gold-dark text-white font-semibold duration-300;
+
+    &:hover {
+      @apply bg-neutral-900 shadow-lg;
+    }
+  }
+
+  .title {
+    @apply text-4xl leading-[48px];
+
+    @screen tablet {
+      @apply text-6xl leading-[72px] tracking-tight;
+    }
+  }
+
+  .metric {
+    @apply flex items-center gap-4;
+
+    @screen tablet {
+      @apply flex-col items-start gap-2 basis-2/6;
+    }
+
+    @screen desktop {
+      @apply flex-row items-center gap-4;
+    }
+
+    &__value {
+      @apply font-playfair text-5xl leading-[60px];
+
+      @screen tablet {
+        @apply text-6xl leading-[72px] tracking-tight;
+      }
+    }
+
+    &__text {
+      @apply font-normal text-sm tracking-wider;
+    }
+  }
+
+  .scale103_hover {
+    @apply duration-300 hover:scale-103 ;
+  }
+
+  .underline_hover {
+    &:hover {
+      @apply underline underline-offset-8;
+    }
+  }
+
   .header {
     @apply container flex items-center justify-between h-21 mb-20;
 
     &__logo {
-      @apply h-6 scale103__hover;
+      @apply h-6;
     }
 
     &__actions {
@@ -38,11 +96,11 @@
     }
 
     &__menu-link {
-      @apply font-medium desktop:text-neutral-700 underline__hover;
+      @apply font-medium desktop:text-neutral-700;
     }
 
     &__button {
-      @apply button text-xs;
+      @apply text-xs;
     }
   }
 
@@ -80,7 +138,7 @@
     }
 
     &__button {
-      @apply scale103__hover w-[120px] absolute top-0 inset-x-2/4 -translate-x-2/4 -translate-y-2/4;
+      @apply w-[120px] absolute top-0 inset-x-2/4 -translate-x-2/4 -translate-y-2/4;
 
       @screen desktop {
         @apply translate-x-0 left-28;
@@ -140,80 +198,240 @@
     }
   }
 
-  
-
-  .pretitle {
-    @apply block relative font-semibold text-sm text-gold-dark ml-20 mb-6 tracking-widest;
-
-    &::before {
-      @apply absolute top-2/4 -translate-x-full -ml-4 content-[''] w-16 h-px bg-gold-dark;
-    }
-  }
-
-  .button {
-    @apply flex gap-1 items-center justify-center h-11 w-34.5 bg-gold-dark text-white font-semibold duration-300;
-
-    &:hover {
-      @apply bg-neutral-900 shadow-lg;
-    }
-  }
-
-  .heading {
-    @apply text-4xl leading-[48px];
-
-    @screen tablet {
-      @apply text-6xl leading-[72px] tracking-tight;
-    }
-  }
-
   .about {
-    @apply flex flex-col gap-20 mb-12 pt-12;
+    @apply container;
+
+    &__main {
+      @apply flex flex-col gap-20 mb-12 pt-12;
+  
+      @screen tablet {
+        @apply gap-28 pt-24 mb-24;
+      }
+  
+      @screen desktop {
+        @apply pt-48.5 mb-32 flex-row gap-10;
+      }
+    }
+
+    &__text {
+      @apply flex flex-col gap-6;
+
+      @screen desktop {
+        @apply max-w-[592px];
+      }
+    }
+
+    &__pretitle {
+      @apply mb-0;
+    }
+
+    &__paragraph {
+      @apply text-base text-neutral-700;
+
+      @screen tablet {
+        @apply text-lg leading-8;
+      }
+    }
+
+    &__images-container {
+      @apply relative;
+    }
+
+    &__images {
+      @apply flex justify-center gap-[9px];
+
+      @screen tablet {
+        @apply gap-4;
+      }
+
+      @screen desktop {
+        @apply pr-2;
+      }
+    }
+
+    &__image-left {
+      @screen desktop {
+        @apply -mt-16.5;
+      }
+    }
+
+    &__image__right {
+      @apply pt-11;
+
+      @screen tablet {
+        @apply pt-[93px];
+      }
+
+      @screen desktop {
+        @apply pt-1;
+      }
+    }
+
+    &__badge {
+      @apply absolute -top-14 left-[141px];
+
+      @screen tablet {
+        @apply left-[291px];
+      }
+
+      @screen desktop {
+        @apply -top-30.5 left-60;
+      }
+    }
+
+    &__metrics {
+      @apply flex flex-col gap-8 pb-12 border-b border-neutral-300;
+
+      @screen tablet {
+        @apply flex-row;
+      }
+
+      @screen desktop {
+        @apply pb-20;
+      }
+    }
+  }
+
+  .services {
+    @apply container pt-24;
 
     @screen tablet {
-      @apply gap-28 pt-24 mb-24;
+      @apply pt-36;
     }
 
     @screen desktop {
-      @apply pt-48.5 mb-32 flex-row gap-10;
-    }
-  }
-
-  .scale103__hover {
-    @apply duration-300 hover:scale-103 ;
-  }
-
-  .underline__hover {
-    &:hover {
-      @apply underline underline-offset-8;
-    }
-  }
-
-  .metric {
-    @apply flex items-center gap-4;
-
-    @screen tablet {
-      @apply flex-col items-start gap-2 basis-2/6;
+      @apply pt-40;
     }
 
-    @screen desktop {
-      @apply flex-row items-center gap-4;
+    &__title {
+      @apply mb-10;
+
+      @screen tablet {
+        @apply mb-20;
+      }
+  
+      @screen desktop {
+        @apply w-[800px];
+      }
+    }
+
+    &__list {
+      @apply flex flex-col gap-8;
+
+      @screen desktop {
+        @apply flex-row;
+      }
+    }
+
+    &__service {
+      @apply p-8 border border-gold-light;
+
+      @screen tablet {
+        @apply p-10;
+      }
+    }
+
+    &__service-image {
+      @apply mb-6;
+
+      @screen tablet {
+        @apply mb-20;
+      }
+    }
+
+    &__service-title {
+      @apply mb-4 text-3xl leading-10;
+
+      @screen tablet {
+        @apply text-4xl;
+      }
+    }
+
+    &__service-description {
+      @apply text-lg leading-8 text-neutral-700;
     }
   }
 
   .works {
-    @apply flex flex-col gap-10 pt-24 pb-40 border-b border-b-neutral-300 mb-10;
+    @apply container relative;
 
-    @screen tablet {
-      @apply pt-48 pb-52 mb-20 gap-20;
+    &__content {
+      @apply flex flex-col gap-10 pt-24 pb-40 border-b border-b-neutral-300 mb-10;
+  
+      @screen tablet {
+        @apply pt-48 pb-52 mb-20 gap-20;
+      }
+  
+      @screen desktop {
+        @apply flex-row pt-56 pb-30 gap-[88px];
+      }
     }
 
-    @screen desktop {
-      @apply flex-row pt-56 pb-30 gap-[88px];
+    &__content-part-1 {
+      @screen desktop {
+        @apply max-w-[592px];
+      }
+    }
+
+    &__content-part-2 {
+      @apply flex flex-col gap-10;
+
+      @screen tablet {
+        @apply gap-20;
+      }
+
+      @screen desktop {
+        @apply max-w-[480px];
+      }
+    }
+
+    &__title {
+      @apply mb-12;
+
+      @screen desktop {
+        @apply mb-24;
+      }
+    }
+
+    &__work {
+      @apply flex flex-col gap-4;
+    }
+
+    &__work-image {
+      @apply mb-2;
+    }
+
+    &__work-title {
+      @apply text-2xl;
+
+      @screen tablet {
+        @apply text-4xl leading-[48px];
+      }
+    }
+
+    &__work-description {
+      @apply text-neutral-700;
+
+      @screen tablet {
+        @apply text-lg leading-8;
+      }
+    }
+
+    &__button {
+      @apply w-[156px] h-14 absolute bottom-14;
+
+      @screen tablet {
+        @apply bottom-26;
+      }
+
+      @screen desktop {
+        @apply bottom-44;
+      }
     }
   }
 
   .contacts {
-    @apply flex flex-col gap-12 mb-10 pb-10 border-b border-b-neutral-300;
+    @apply container flex flex-col gap-12 mb-10 pb-10 border-b border-b-neutral-300;
 
     @screen tablet {
       @apply mb-20 pb-20;
@@ -222,13 +440,93 @@
     @screen desktop {
       @apply flex-row gap-0 justify-between;
     }
+
+    &__contact-main {
+      @apply flex flex-col gap-2;
+
+      @screen tablet {
+        @apply gap-4 max-w-[592px];
+      }
+    }
+
+    &__text-main {
+      @apply text-3xl leading-10 ;
+
+      @screen tablet {
+        @apply text-5xl leading-[60px];
+      }
+    }
+
+    &__link-main {
+      @apply block font-playfair font-normal italic underline underline-offset-4 decoration-1 text-3xl leading-10 text-gold-dark;
+  
+      @screen tablet {
+        @apply text-5xl leading-[60px]
+      }
+    }
+
+    &__list {
+      @apply flex flex-col gap-8;
+
+      @screen desktop {
+        @apply max-w-[280px];
+      }
+    }
+
+    &__contact {
+      @apply flex flex-col gap-2;
+    }
+
+    &__text {
+      @apply block;
+    }
+
+    &__link {
+      @apply font-playfair text-2xl text-gold-dark;
+    }
+
+    &__address {
+      @apply font-playfair text-2xl;
+    }
   }
 
-  .contacts-main-link {
-    @apply block font-playfair font-normal italic underline underline-offset-4 decoration-1 text-3xl leading-10 text-gold-dark;
+  .footer {
+    @apply container flex flex-col gap-8 mb-10;
 
     @screen tablet {
-      @apply text-5xl leading-[60px]
+      @apply mb-20;
+    }
+
+    @screen desktop {
+      @apply flex-row gap-0 justify-between items-center;
+    }
+
+    &__copyright {
+      @apply block text-base text-neutral-700;
+    }
+
+    &__copyright-link {
+      @apply text-gold-dark;
+    }
+
+    &__content {
+      @apply flex flex-col gap-4;
+
+      @screen tablet {
+        @apply flex-row items-center gap-26;
+      }
+    }
+
+    &__pretitle {
+      @apply relative block font-semibold text-sm text-neutral-700 tracking-widest;
+
+      &::after {
+        @apply absolute h-px w-16 bg-neutral-700 top-2/4 ml-4;
+      }
+    }
+
+    &__icons {
+      @apply flex gap-6;
     }
   }
 }
