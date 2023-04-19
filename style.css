@@ -831,7 +831,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .hero__image {
-  height: 40rem;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;
@@ -1101,18 +1100,18 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .about__image__right {
-  padding-top: 2.75rem;
+  margin-top: 2.75rem;
 }
 
 @media (min-width: 768px) {
   .about__image__right {
-    padding-top: 93px;
+    margin-top: 93px;
   }
 }
 
 @media (min-width: 1440px) {
   .about__image__right {
-    padding-top: 0.25rem;
+    margin-top: 0.25rem;
   }
 }
 
