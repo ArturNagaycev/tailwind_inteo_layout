@@ -1680,6 +1680,8 @@ h1, h2, h3, h4, h5, h6 {
 
   font-weight: 400;
 
+  font-display: swap;
+
   src: url(./assets/fonts/Outfit-Regular.ttf);
 }
 
@@ -1687,6 +1689,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: Outfit;
 
   font-weight: 300;
+
+  font-display: swap;
 
   src: url(./assets/fonts/Outfit-Light.ttf);
 }
@@ -1696,6 +1700,8 @@ h1, h2, h3, h4, h5, h6 {
 
   font-weight: 500;
 
+  font-display: swap;
+
   src: url(./assets/fonts/Outfit-Medium.ttf);
 }
 
@@ -1704,6 +1710,8 @@ h1, h2, h3, h4, h5, h6 {
 
   font-weight: 600;
 
+  font-display: swap;
+
   src: url(./assets/fonts/Outfit-SemiBold.ttf);
 }
 
@@ -1711,6 +1719,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display';
 
   font-weight: 400;
+
+  font-display: swap;
 
   src: url(./assets/fonts/PlayfairDisplay-Regular.ttf);
 }
@@ -1722,6 +1732,8 @@ h1, h2, h3, h4, h5, h6 {
 
   font-weight: 400;
 
+  font-display: swap;
+
   src: url(./assets/fonts/PlayfairDisplay-Italic.ttf);
 }
 
@@ -1729,6 +1741,8 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Playfair Display';
 
   font-weight: 500;
+
+  font-display: swap;
 
   src: url(./assets/fonts/PlayfairDisplay-Medium.ttf);
 }
@@ -1739,6 +1753,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: italic;
 
   font-weight: 500;
+
+  font-display: swap;
 
   src: url(./assets/fonts/PlayfairDisplay-MediumItalic.ttf);
 }
