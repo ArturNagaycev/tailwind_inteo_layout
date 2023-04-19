@@ -134,7 +134,7 @@
     }
 
     &__image {
-      @apply h-160 object-center object-cover;
+      @apply object-center object-cover;
     }
 
     &__button {
@@ -256,14 +256,14 @@
     }
 
     &__image__right {
-      @apply pt-11;
+      @apply mt-11;
 
       @screen tablet {
-        @apply pt-[93px];
+        @apply mt-[93px];
       }
 
       @screen desktop {
-        @apply pt-1;
+        @apply mt-1;
       }
     }
 
