@@ -1682,7 +1682,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/Outfit-Regular.ttf);
+  src: url(./assets/fonts/Outfit-Regular.woff2);
 }
 
 @font-face {
@@ -1692,7 +1692,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/Outfit-Light.ttf);
+  src: url(./assets/fonts/Outfit-Light.woff2);
 }
 
 @font-face {
@@ -1702,7 +1702,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/Outfit-Medium.ttf);
+  src: url(./assets/fonts/Outfit-Medium.woff2);
 }
 
 @font-face {
@@ -1712,7 +1712,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/Outfit-SemiBold.ttf);
+  src: url(./assets/fonts/Outfit-SemiBold.woff2);
 }
 
 @font-face {
@@ -1722,7 +1722,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/PlayfairDisplay-Regular.ttf);
+  src: url(./assets/fonts/PlayfairDisplay-Regular.woff2);
 }
 
 @font-face {
@@ -1734,7 +1734,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/PlayfairDisplay-Italic.ttf);
+  src: url(./assets/fonts/PlayfairDisplay-Italic.woff2);
 }
 
 @font-face {
@@ -1744,7 +1744,7 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/PlayfairDisplay-Medium.ttf);
+  src: url(./assets/fonts/PlayfairDisplay-Medium.woff2);
 }
 
 @font-face {
@@ -1756,5 +1756,5 @@ h1, h2, h3, h4, h5, h6 {
 
   font-display: swap;
 
-  src: url(./assets/fonts/PlayfairDisplay-MediumItalic.ttf);
+  src: url(./assets/fonts/PlayfairDisplay-MediumItalic.woff2);
 }
