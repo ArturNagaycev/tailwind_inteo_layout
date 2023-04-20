@@ -1,16 +1,702 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./style.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Works and services of Inteo, Architecture and Interior Design Studio"
+    />
+    <link href="./fonts.css" rel="stylesheet" media="print" onload="this.media='all'" />
+    <link href="./style.css" rel="stylesheet" />
     <title>Inteo---Architecture-and-Interior-Design-Studio</title>
   </head>
 
   <body>
-    <h1 class="text-3xl text-red-500 font-bold underline">
-      Hello world!
-    </h1>
+    <!-- HEADER -->
+
+    <header class="header">
+      <!-- HEADER logo -->
+
+      <a href="#">
+        <img
+          class="header__logo scale103_hover"
+          src="./assets/img/logo.svg"
+          alt="logo"
+          width="88px"
+          height="32px"
+        />
+      </a>
+
+      <!-- HEADER actions -->
+
+      <div class="header__actions">
+        <!-- HEADER menu -->
+
+        <nav class="header__menu">
+          <ul class="header__menu-items">
+            <li>
+              <a class="header__menu-link underline_hover" href="#about">
+                About
+              </a>
+            </li>
+
+            <li>
+              <a class="header__menu-link underline_hover" href="#services">
+                Services
+              </a>
+            </li>
+
+            <li>
+              <a class="header__menu-link underline_hover" href="#works">
+                Our Work
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- HEADER button -->
+
+        <button class="button header__button">
+          CONTACT US
+
+          <img
+            src="./assets/img/button_icon.svg"
+            alt="button arrow icon"
+            width="20px"
+            height="20px"
+          />
+        </button>
+      </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+
+    <main>
+      <!-- HERO -->
+
+      <section>
+        <!-- HERO title -->
+
+        <div class="hero__text">
+          <!-- HERO title main title -->
+
+          <h1 class="hero__title">
+            Make
+            <i> your home </i>
+            an ode to joy
+          </h1>
+
+          <!-- HERO title description -->
+
+          <p class="hero__description">
+            We turn your empty house to a lovely home, making the compact spaces
+            with sapce saving furnitures. Making the unique tastes of yours into
+            reality!
+          </p>
+        </div>
+
+        <!-- HERO image -->
+
+        <div class="hero__image-container">
+          <!-- HERO image main image -->
+
+          <picture>
+            <source
+              media="(max-width: 375px)"
+              srcset="./assets/img/mobile_hero-image.webp"
+              width="375px"
+              height="640px"
+            />
+            <source
+              media="(max-width: 768px)"
+              srcset="./assets/img/tablet_hero-image.webp"
+              width="768px"
+              height="640px"
+            />
+            <img
+              class="hero__image"
+              src="./assets/img/desktop_hero-image.webp"
+              alt="flat photo"
+              width="1440px"
+              height="640px"
+            />
+          </picture>
+
+          <!-- HERO image cta button -->
+
+          <button class="hero__button scale103_hover">
+            <img
+              src="./assets/img/button_cta_icon.svg"
+              alt="cta button"
+              width="120px"
+              height="120px"
+            />
+          </button>
+        </div>
+
+        <!-- HERO awards -->
+
+        <div class="hero__awards">
+          <div class="hero__awards-content">
+            <!-- HERO awards title -->
+
+            <div class="hero__awards-title">
+              <span class="hero__awards-title-text"> Awards </span>
+            </div>
+
+            <!-- HERO awards list -->
+
+            <ul class="hero__awards-list">
+              <li class="hero__awards-award">
+                <img
+                  src="./assets/img/award_icon_german-design.svg"
+                  alt="german design award"
+                  width="80px"
+                  height="80px"
+                />
+
+                <span class="hero__awards-award-text">
+                  German Design Award
+                  <br />
+                  2021
+                </span>
+              </li>
+
+              <li class="hero__awards-award">
+                <img
+                  src="./assets/img/award_icon_a-design.svg"
+                  alt="a design award"
+                  width="80px"
+                  height="80px"
+                />
+
+                <span class="hero__awards-award-text">
+                  Gold A’ Design Award
+                  <br />
+                  2021
+                </span>
+              </li>
+
+              <li class="hero__awards-award">
+                <img
+                  src="./assets/img/award_icon_if-design.svg"
+                  alt="if design award"
+                  width="80px"
+                  height="80px"
+                />
+
+                <span class="hero__awards-award-text">
+                  IF Design Award
+                  <br />
+                  2020
+                </span>
+              </li>
+
+              <li class="hero__awards-award">
+                <img
+                  src="./assets/img/award_icon_good-design.svg"
+                  alt="good design award"
+                  width="80px"
+                  height="80px"
+                />
+                <span class="hero__awards-award-text">
+                  Good Design Award
+                  <br />
+                  2019
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+
+      <section id="about" class="about">
+        <!-- ABOUT main block -->
+
+        <div class="about__main">
+          <!-- ABOUT text block -->
+
+          <div class="about__text">
+            <!-- ABOUT pretitle -->
+
+            <div>
+              <span class="pretitle about__pretitle"> ABOUT US </span>
+            </div>
+
+            <!-- ABOUT title -->
+
+            <h2 class="title">
+              We help to bring your
+              <i> dream home </i>
+              to reality
+            </h2>
+
+            <!-- ABOUT paragraph 1 -->
+
+            <p class="about__paragraph">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus
+              fringilla dui amet faucibus nam. Erat id laoreet posuere etiam
+              morbi.
+            </p>
+
+            <!-- ABOUT paragraph 2 -->
+
+            <p class="about__paragraph">
+              Tempor dolor elementum tellus non ipsum faucibus. Justo, magna
+              mauris posuere auctor justo. Habitant proin aliquet volutpat leo
+              ultricies. Dui blandit eget vitae turpis ultrices aliquet nunc.
+              Faucibus sit odio bibendum lobortis diam.
+            </p>
+          </div>
+
+          <!-- ABOUT images -->
+
+          <div class="about__images-container">
+            <div class="about__images">
+              <!-- ABOUT image 1 -->
+
+              <div class="about__image-left">
+                <picture>
+                  <source
+                    media="(max-width: 375px)"
+                    srcset="./assets/img/mobile_about_image_1.webp"
+                    width="159px"
+                    height="272px"
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./assets/img/tablet_about_image_1.webp"
+                    width="326px"
+                    height="558px"
+                  />
+                  <img
+                    class="scale103_hover"
+                    src="./assets/img/desktop_about_image_1.webp"
+                    alt="flat photo kitchen"
+                    width="280px"
+                    height="480px"
+                  />
+                </picture>
+              </div>
+
+              <!-- ABOUT image 2 -->
+
+              <div class="about__image__right">
+                <picture>
+                  <source
+                    media="(max-width: 375px)"
+                    srcset="./assets/img/mobile_about_image_2.webp"
+                    width="159px"
+                    height="272px"
+                  />
+                  <source
+                    media="(max-width: 768px)"
+                    srcset="./assets/img/tablet_about_image_2.webp"
+                    width="326px"
+                    height="558px"
+                  />
+                  <img
+                    class="scale103_hover"
+                    src="./assets/img/desktop_about_image_2.webp"
+                    alt="flat photo bedroom"
+                    width="280px"
+                    height="480px"
+                  />
+                </picture>
+              </div>
+            </div>
+
+            <!-- ABOUT badge -->
+
+            <img
+              class="about__badge"
+              src="./assets/img/about_badge_icon.svg"
+              alt="badge design studio"
+            />
+          </div>
+        </div>
+
+        <!-- ABOUT metrics -->
+
+        <ul class="about__metrics">
+          <!-- ABOUT metrics mitric 1-->
+
+          <li class="metric scale103_hover">
+            <span class="metric__value"> 100% </span>
+
+            <span class="metric__text">
+              SATISFITATION
+              <br />
+              CLIENTS
+            </span>
+          </li>
+
+          <!-- ABOUT metrics mitric 2-->
+
+          <li class="metric scale103_hover">
+            <span class="metric__value"> 250 </span>
+
+            <span class="metric__text">
+              SATISFITATION
+              <br />
+              CLIENTS
+            </span>
+          </li>
+
+          <!-- ABOUT metrics mitric 2-->
+
+          <li class="metric scale103_hover">
+            <span class="metric__value"> 3469 </span>
+
+            <span class="metric__text">
+              SATISFITATION
+              <br />
+              CLIENTS
+            </span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- SERVICES -->
+
+      <section id="services" class="services">
+        <!-- SERVICES pretitle-->
+
+        <span class="pretitle"> OUR SERVICES </span>
+
+        <!-- SERVICES main title -->
+
+        <h2 class="title services__title">
+          We provide the
+          <i> best solutions </i>
+          for your dream home
+        </h2>
+
+        <!-- SERVICES list -->
+
+        <ul class="services__list">
+          <!-- SERVICES service 1 -->
+
+          <li class="scale103_hover services__service">
+            <img
+              class="services__service-image"
+              src="./assets/img/service_icon_1.svg"
+              alt="Architectural & Interior design icon"
+              width="48px"
+              height="48px"
+            />
+
+            <h3 class="services__service-title">
+              Architectural & Interior design
+            </h3>
+
+            <p class="services__service-description">
+              Non diam pretium tristique augue placerat dolor. Accumsan nibh
+              nunc, molestie volutpat ipsum, ultricies.
+            </p>
+          </li>
+
+          <!-- SERVICES service 2 -->
+
+          <li class="scale103_hover services__service">
+            <img
+              class="services__service-image"
+              src="./assets/img/service_icon_2.svg"
+              alt="Building Renovation icon"
+              width="48px"
+              height="48px"
+            />
+
+            <h3 class="services__service-title">Building Renovation</h3>
+
+            <p class="services__service-description">
+              Non diam pretium tristique augue placerat dolor. Accumsan nibh
+              nunc, molestie volutpat ipsum, ultricies.
+            </p>
+          </li>
+
+          <!-- SERVICES service 3 -->
+
+          <li class="scale103_hover services__service">
+            <img
+              class="services__service-image"
+              src="./assets/img/service_icon_3.svg"
+              alt="Construciton Management icon"
+              width="48px"
+              height="48px"
+            />
+
+            <h3 class="services__service-title">Construciton Management</h3>
+
+            <p class="services__service-description">
+              Non diam pretium tristique augue placerat dolor. Accumsan nibh
+              nunc, molestie volutpat ipsum, ultricies.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <!-- WORKS -->
+
+      <section id="works" class="works">
+        <div class="works__content">
+          <div class="works__content-part-1">
+            <!-- WORKS pretitle-->
+
+            <span class="pretitle"> RECENT WORKS </span>
+
+            <!-- WORKS main title -->
+
+            <h2 class="title works__title">
+              Some of
+              <i> our crafts </i>
+              made with love
+            </h2>
+
+            <!-- WORKS work 1 -->
+
+            <div class="works__work">
+              <picture>
+                <source
+                  media="(max-width: 375px)"
+                  srcset="./assets/img/mobile_works_image_1.webp"
+                  width="335px"
+                  height="251px"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/img/tablet_works_image_1.webp"
+                  width="688px"
+                  height="516px"
+                />
+                <img
+                  class="scale103_hover works__work-image"
+                  src="./assets/img/desktop_works_image_1.webp"
+                  alt="Villa Furnishing & Interior image"
+                  width="592px"
+                  height="444px"
+                />
+              </picture>
+
+              <h3 class="works__work-title">Villa Furnishing & Interior</h3>
+
+              <p class="works__work-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus fringilla dui amet faucibus nam. Erat id laoreet
+                posuere etiam morbi.
+              </p>
+            </div>
+          </div>
+
+          <div class="works__content-part-2">
+            <!-- WORKS work 2 -->
+
+            <div class="works__work">
+              <picture>
+                <source
+                  media="(max-width: 375px)"
+                  srcset="./assets/img/mobile_works_image_2.webp"
+                  width="335px"
+                  height="251px"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/img/tablet_works_image_2.webp"
+                  width="688px"
+                  height="516px"
+                />
+                <img
+                  class="scale103_hover"
+                  src="./assets/img/desktop_works_image_2.webp"
+                  alt="Luxury Hotel Renovation image"
+                  width="480px"
+                  height="360px"
+                />
+              </picture>
+
+              <h3 class="works__work-title">Luxury Hotel Renovation</h3>
+
+              <p class="works__work-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus fringilla dui amet faucibus nam.
+              </p>
+            </div>
+
+            <!-- WORKS work 3 -->
+
+            <div class="works__work">
+              <picture>
+                <source
+                  media="(max-width: 375px)"
+                  srcset="./assets/img/mobile_works_image_3.webp"
+                  width="335px"
+                  height="251px"
+                />
+                <source
+                  media="(max-width: 768px)"
+                  srcset="./assets/img/tablet_works_image_3.webp"
+                  width="688px"
+                  height="516px"
+                />
+                <img
+                  class="scale103_hover"
+                  src="./assets/img/desktop_works_image_3.webp"
+                  alt="Residence Swimming Pool image"
+                  width="480px"
+                  height="360px"
+                />
+              </picture>
+
+              <h3 class="works__work-title">Residence Swimming Pool</h3>
+
+              <p class="works__work-description">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Faucibus fringilla dui amet faucibus nam.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- WORKS button -->
+
+        <button class="button works__button">
+          CONTACT US
+          <img
+            src="./assets/img/button_icon.svg"
+            alt="button arrow icon"
+            width="20px"
+            height="20px"
+          />
+        </button>
+      </section>
+
+      <!-- CONTACTS -->
+
+      <section class="contacts">
+        <!-- CONTACTS main text -->
+
+        <div class="contacts__contact-main">
+          <h2 class="contacts__text-main">
+            Kick-start your dream home with us
+          </h2>
+
+          <a class="contacts__link-main" href="#some-modal-window">
+            Send us a hi
+          </a>
+        </div>
+
+        <!-- CONTACTS address, email, phone -->
+
+        <ul class="contacts__list">
+          <li class="contacts__contact">
+            <span class="contacts__text contacts__address">
+              Brooklyn, New York
+            </span>
+
+            <a href="https://goo.gl/maps/H65wANrVQsQ4HTbE8" target="_blank">
+              962 Fifth Avenue Str, 3rd Floor-Trump Building NY 10006, United
+              State.
+            </a>
+          </li>
+
+          <li class="contacts__contact">
+            <span class="contacts__text"> Email us at </span>
+
+            <a
+              class="contacts__link underline_hover"
+              href="mailto:hello@landify.design"
+            >
+              hello@landify.design
+            </a>
+          </li>
+
+          <li class="contacts__contact">
+            <span class="contacts__text">
+              If you're hurry, quick call for us
+            </span>
+
+            <a
+              class="contacts__link underline_hover"
+              href="tel:8(663)125-08-59"
+            >
+              +8(663)125-08-59
+            </a>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+      <!-- FOOTER copyright -->
+
+      <span class="footer__copyright">
+        © 2022 Inteo - Award winning studio. Made with love by
+        <a class="footer__copyright-link" href="#landify-website"> Landify </a>
+      </span>
+
+      <div class="footer__content">
+        <!-- FOOTER pre icons title -->
+
+        <span class="footer__pretitle"> CONNECT </span>
+
+        <!-- FOOTER icons -->
+
+        <ul class="footer__icons">
+          <li>
+            <a href="#instagram">
+              <img
+                class="scale103_hover"
+                src="./assets/img/footer_icon_instagram.svg"
+                alt="Instagram icon"
+                width="40px"
+                height="40px"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#facebook">
+              <img
+                class="scale103_hover"
+                src="./assets/img/footer_icon_facebook.svg"
+                alt="Facebook icon"
+                width="40px"
+                height="40px"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#youtube">
+              <img
+                class="scale103_hover"
+                src="./assets/img/footer_icon_youtube.svg"
+                alt="Youtube icon"
+                width="40px"
+                height="40px"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="#twitter">
+              <img
+                class="scale103_hover"
+                src="./assets/img/footer_icon_twitter.svg"
+                alt="Twitter icon"
+                width="40px"
+                height="40px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
